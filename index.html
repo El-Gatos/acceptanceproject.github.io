@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Forum</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Welcome to My Forum</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#topics">Topics</a></li>
+        <li><a href="#create">Create a New Topic</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to My Forum! This is a place where you can discuss all kinds of topics with other people.</p>
+      </section>
+      <section id="topics">
+        <h2>Topics</h2>
+        <ul id="topic-list">
+          <!-- This is where the topics will be displayed dynamically with JavaScript -->
+        </ul>
+      </section>
+      <section id="create">
+        <h2>Create a New Topic</h2>
+        <form>
+          <label for="topic-title">Title:</label>
+          <input type="text" id="topic-title" name="title"><br>
+
+          <label for="topic-body">Body:</label>
+          <textarea id="topic-body" name="body"></textarea><br>
+
+          <button type="submit" id="create-topic-button">Create Topic</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Copyright © 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
